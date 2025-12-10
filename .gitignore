@@ -3,7 +3,8 @@ __pycache__/
 cache/
 *.py[codz]
 *$py.class
-
+.bash_history
+.selected_editor
 # C extensions
 *.so
 
