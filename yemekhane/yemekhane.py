@@ -1,4 +1,4 @@
-from variables import *
+from .variables import *
 from bs4 import BeautifulSoup
 import bs4
 import requests

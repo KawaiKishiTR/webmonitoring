@@ -1,19 +1,13 @@
-from pathlib import Path
-from dotenv import load_dotenv
-import os
-
+from main_variables import *
 
 ### FOLDER PATHS
-yemekhane_folder = Path(__file__).parent
-folder = yemekhane_folder.parent
+yemekhane_folder = folder / "yemekhane"
 cache_folder = yemekhane_folder / "cache"
+yemekler_folder = cache_folder / "yemekler"
 
-### FİLE PATHS
-dotenv_file = folder / ".env"
-
-
-### LOAD .ENV FİLE
-load_dotenv(dotenv_file)
+### Creating paths
+cache_folder.mkdir(exist_ok=True)
+yemekler_folder.mkdir(exist_ok=True)
 
 ### .ENV VARİABLES
 CU_YEMEKHANE = os.environ["CU-YEMEKHANE"]
